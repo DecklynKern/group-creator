@@ -5,6 +5,7 @@ use rand::seq::SliceRandom;
 fn main() {
 
     let options = eframe::NativeOptions::default();
+    
     let window = GroupCreator {
         names: Vec::new(),
         num_groups: String::from("3"),
@@ -131,7 +132,5 @@ impl GroupCreator {
             group_index %= groups_num;
 
         }
-
     }
-
 }
